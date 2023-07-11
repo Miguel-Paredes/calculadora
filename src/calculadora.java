@@ -205,21 +205,8 @@ public class calculadora {
             }
         });
 
-        respuesta.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                utilizarResultadoAnterior();
-            }
-        });
 
-
-        resanterior.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                utilizarResultadoAnterior();
-            }
-        });
-    }
+        }
 
     private void numeroPresionado(String numero) {
         if (nuevoNumero) {
@@ -262,8 +249,8 @@ public class calculadora {
     }
 
     private void limpiarCalculadora() {
-        vista.setText("");
-        operador = "";
+        vista.setText("0");
+        operador = "0";
         primerNumero = 0;
         resultado = 0;
         nuevoNumero = true;
